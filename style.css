@@ -3,6 +3,7 @@ body {
     margin: 0;
     text-align: center;
     font-family: "Merriweather", serif;
+    display: block;
 }
 
 h1 {
@@ -29,17 +30,6 @@ h2 {
 .first-pic{
     margin: 0;
     
-}
-
-.top-cloud {
-    position: absolute;
-    right: 300px;
-    top: 40px;
-}
-.bottom-cloud{
-    position: absolute;
-    left: 250px;
-    bottom: 300px;
 }
 
 .rounded-img{
@@ -111,4 +101,39 @@ ul{
 
   a {
     color: #66bfbf;;
+  }
+
+  @media (max-width: 600px) {
+
+    html,body {        
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+      }
+    
+    .top-container>img {
+        height: 20vh;
+    }
+    h1 {
+        
+        font-size: 3rem;
+       
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+
+    .bio{
+        width: 70%;
+    }
+    
+    .shop-images{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
   }
